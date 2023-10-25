@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
+  font-size: 1.6rem; /*Para manter a proporção apos ter usado a porcentagem no :root*/
+  
+  display: grid;
+  place-items: center; /*Alinha a caixa bem ao meio do body, tanto vertical quanto lateral*/
+
+  height: 100vh;
+}
+
+.hide {  /*Outra classe criada dentro do screen que sera alternada através do javascript entre screen1 e screen2, fanzendo revezar a sua aparição*/
+  display: none;
+}
+
+main {
+  border-radius: .6rem ;
+  background: #FFF;
+
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.10);
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 80%); /*A porcentagem e a proporção que a caixa se manterá em relação a tela, quando expremida*/
+
+  margin-top: -15rem; /*Margem negativa usada para aproximar caixa mais ao topo do body*/
+
+  text-align: center;
+}
+
+button {
+  background: #7879F1;
+  color: white;
+  border-radius: 0px 4px 4px 0px;
+
+  cursor: pointer;
+
+  transition: background .4s; /*Para suavizar a transição de cores*/
+}
+
+button:hover {
+  background-color: #6969e7;
+}
+
+
+
+/*screen1*/
+
+h1 {
+  margin-bottom: 1.6rem;
+  color: #6969e7;
+}
+
+.screen1 p {
+  color: #7879F1;
+}
+
+form {
+  margin-top: 4.8rem;
+  display: flex; /*Usado o display flex apenas para unir a barra do form com a barra do button*/
+  justify-content: center;
+}
+
+input, button {
+  padding: 1.6rem;
+  border: none;
+
+}
+
+input {
+  background: #DCE2E9;
+  border-radius: 4px 0px 0px 4px;
+  width: 6rem;
+
+}
+
+
+
+
+/*Screen2*/
+
+h2 {
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: .4rem;
+}
